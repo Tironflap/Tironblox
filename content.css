@@ -1,0 +1,40 @@
+/* content.css */
+.gamerscore-pill {
+  background: #1f1f1f;
+  border: 1px solid #3a3a3c;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 8px 6px 0;
+  font-family: "Roboto", system-ui, sans-serif;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  height: 42px;
+}
+
+.gamerscore-pill .icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.gamerscore-pill .label {
+  font-size: 13px;
+  color: #aaaaaa;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.gamerscore-pill .value {
+  font-size: 17px;
+  font-weight: 600;
+  color: #00ff9d;
+  line-height: 1;
+}
+
+.gamerscore-status {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
