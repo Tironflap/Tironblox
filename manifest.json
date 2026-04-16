@@ -1,14 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Tironblox",
-  "version": "0.2",
-  "version_name": "0.2 (Sphynx)",
-  "description": "Automatically shows your Badge Gamerscore on Roblox profiles",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
+  "name": "Roblox Badge Gamerscore",
+  "version": "1.0",
+  "description": "Shows Badge Gamerscore on profiles, inventory and badge pages",
   "permissions": ["storage"],
   "host_permissions": [
     "https://www.roblox.com/*",
@@ -16,10 +10,10 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://www.roblox.com/users/*/profile"],
+      "matches": ["https://www.roblox.com/*"],
       "js": ["content.js"],
-      "css": ["content.css"],
-      "run_at": "document_end"
+      "run_at": "document_end",
+      "all_frames": false
     }
   ]
 }
