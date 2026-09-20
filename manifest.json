@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Roblox Badge Gamerscore",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Shows Badge Gamerscore on profiles, inventory and badge pages",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "permissions": ["storage"],
   "host_permissions": [
     "https://www.roblox.com/*",
@@ -12,6 +17,7 @@
     {
       "matches": ["https://www.roblox.com/*"],
       "js": ["content.js"],
+      "css": ["content.css"],
       "run_at": "document_end",
       "all_frames": false
     }
