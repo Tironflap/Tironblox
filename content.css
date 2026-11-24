@@ -1,40 +1,20 @@
-/* content.css */
-.gamerscore-pill {
-  background: #1f1f1f;
-  border: 1px solid #3a3a3c;
-  border-radius: 9999px;
-  padding: 8px 16px;
+.tironblox-chip {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin: 6px 8px 6px 0;
-  font-family: "Roboto", system-ui, sans-serif;
-  color: #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  height: 42px;
+  margin: 4px 0 0 6px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #0e0e10;
+  color: #f4f4f5;
+  border: 1px solid #2c2c30;
+  font: 600 12px/1.4 "Builder Sans", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
 }
 
-.gamerscore-pill .icon {
-  font-size: 22px;
-  line-height: 1;
-}
-
-.gamerscore-pill .label {
-  font-size: 13px;
-  color: #aaaaaa;
-  white-space: nowrap;
-  line-height: 1.2;
-}
-
-.gamerscore-pill .value {
-  font-size: 17px;
-  font-weight: 600;
-  color: #00ff9d;
-  line-height: 1;
-}
-
-.gamerscore-status {
-  font-size: 12px;
-  color: #777;
-  margin-top: 4px;
-}
+.tironblox-chip[data-tier="legendary"] { color: #ffc14d; }
+.tironblox-chip[data-tier="epic"] { color: #c77dff; }
+.tironblox-chip[data-tier="rare"] { color: #4c9aff; }
+.tironblox-chip[data-tier="uncommon"] { color: #3ddc97; }
+.tironblox-chip[data-tier="common"] { color: #d0d0d4; }
+.tironblox-chip[data-tier="unknown"],
+.tironblox-chip[data-tier="unranked"] { color: #8d8d95; }
